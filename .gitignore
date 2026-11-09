@@ -59,3 +59,4 @@ yarn-error.*
 .DS_Store
 Thumbs.db
 *.tsbuildinfo
+.edge_temp/

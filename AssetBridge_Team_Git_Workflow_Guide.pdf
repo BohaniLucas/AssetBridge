@@ -1,0 +1,509 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 6164 >>
+stream
+0.060 0.090 0.160 rg
+40.00 715.00 515.28 96.00 re f
+0.000 0.760 1.000 rg
+40.00 807.00 515.28 4.00 re f
+0.120 0.200 0.350 rg
+54.00 786.00 75.00 14.00 re f
+0.000 0.760 1.000 rg
+BT /F2 7.50 Tf 59.00 790.00 Td (ASSETBRIDGE) Tj ET
+0.120 0.200 0.350 rg
+135.00 786.00 115.00 14.00 re f
+1.000 1.000 1.000 rg
+BT /F2 7.50 Tf 140.00 790.00 Td (TEAM WORKFLOW GUIDE) Tj ET
+0.120 0.200 0.350 rg
+256.00 786.00 70.00 14.00 re f
+0.570 0.770 1.000 rg
+BT /F2 7.50 Tf 261.00 790.00 Td (GIT & GITHUB) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 15.50 Tf 54.00 764.00 Td (Team Git Collaboration & Workflow Guide) Tj ET
+0.580 0.770 0.990 rg
+BT /F1 9.50 Tf 54.00 748.00 Td (How to Work in Your Personal Branch, Sync with dev, and Push Cleanly) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 54.00 727.00 Td (Repository: https://github.com/BohaniLucas/AssetBridge.git) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.50 Tf 40.00 692.00 Td (1. Team Branch Structure & Roles) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 688.00 m 555.28 688.00 l s
+0.300 0.350 0.450 rg
+BT /F1 9.00 Tf 40.00 674.00 Td (Our project utilizes a 3-tier structure to isolate in-progress work and protect the demo codebase:) Tj ET
+0.120 0.160 0.230 rg
+40.00 656.00 515.28 17.00 re f
+1.000 1.000 1.000 rg
+BT /F2 8.50 Tf 48.00 660.00 Td (BRANCH) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.50 Tf 160.00 660.00 Td (PURPOSE & ROLE) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.50 Tf 400.00 660.00 Td (ASSIGNED TO) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.50 Tf 485.00 660.00 Td (DIRECT PUSH?) Tj ET
+1.000 0.950 0.950 rg
+40.00 640.00 515.28 17.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 640.00 m 555.28 640.00 l s
+0.120 0.150 0.220 rg
+BT /F4 8.50 Tf 48.00 644.00 Td (main) Tj ET
+0.250 0.300 0.380 rg
+BT /F1 8.50 Tf 160.00 644.00 Td (Production Release & Final Hackathon Submission) Tj ET
+0.150 0.200 0.280 rg
+BT /F2 8.50 Tf 400.00 644.00 Td (Team Lead) Tj ET
+0.900 0.200 0.200 rg
+BT /F2 8.00 Tf 485.00 644.00 Td (NEVER \(Protected\)) Tj ET
+0.950 0.980 1.000 rg
+40.00 623.00 515.28 17.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 623.00 m 555.28 623.00 l s
+0.120 0.150 0.220 rg
+BT /F4 8.50 Tf 48.00 627.00 Td (dev) Tj ET
+0.250 0.300 0.380 rg
+BT /F1 8.50 Tf 160.00 627.00 Td (Shared Integration / Staging branch \(all features land here\)) Tj ET
+0.150 0.200 0.280 rg
+BT /F2 8.50 Tf 400.00 627.00 Td (Entire Team) Tj ET
+0.100 0.400 0.800 rg
+BT /F2 8.00 Tf 485.00 627.00 Td (Via Merge / PR) Tj ET
+1.000 1.000 1.000 rg
+40.00 606.00 515.28 17.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 606.00 m 555.28 606.00 l s
+0.120 0.150 0.220 rg
+BT /F4 8.50 Tf 48.00 610.00 Td (fullstack/Lucas) Tj ET
+0.250 0.300 0.380 rg
+BT /F1 8.50 Tf 160.00 610.00 Td (Lucas's dedicated feature & full-stack development branch) Tj ET
+0.150 0.200 0.280 rg
+BT /F2 8.50 Tf 400.00 610.00 Td (Lucas) Tj ET
+0.100 0.600 0.300 rg
+BT /F2 8.00 Tf 485.00 610.00 Td (YES \(Your branch\)) Tj ET
+0.970 0.980 0.990 rg
+40.00 589.00 515.28 17.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 589.00 m 555.28 589.00 l s
+0.120 0.150 0.220 rg
+BT /F4 8.50 Tf 48.00 593.00 Td (fullstack/Rory) Tj ET
+0.250 0.300 0.380 rg
+BT /F1 8.50 Tf 160.00 593.00 Td (Rory's dedicated feature & full-stack development branch) Tj ET
+0.150 0.200 0.280 rg
+BT /F2 8.50 Tf 400.00 593.00 Td (Rory) Tj ET
+0.100 0.600 0.300 rg
+BT /F2 8.00 Tf 485.00 593.00 Td (YES \(Your branch\)) Tj ET
+1.000 1.000 1.000 rg
+40.00 572.00 515.28 17.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 572.00 m 555.28 572.00 l s
+0.120 0.150 0.220 rg
+BT /F4 8.50 Tf 48.00 576.00 Td (fullstack/Dokotela) Tj ET
+0.250 0.300 0.380 rg
+BT /F1 8.50 Tf 160.00 576.00 Td (Dokotela's dedicated feature & full-stack branch) Tj ET
+0.150 0.200 0.280 rg
+BT /F2 8.50 Tf 400.00 576.00 Td (Dokotela) Tj ET
+0.100 0.600 0.300 rg
+BT /F2 8.00 Tf 485.00 576.00 Td (YES \(Your branch\)) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.50 Tf 40.00 549.00 Td (2. First-Time Setup & Branch Onboarding) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 545.00 m 555.28 545.00 l s
+0.300 0.350 0.450 rg
+BT /F1 9.00 Tf 40.00 533.00 Td (Run these steps once in PowerShell / Terminal when getting started on your laptop:) Tj ET
+0.070 0.100 0.170 rg
+40.00 385.00 515.28 138.00 re f
+0.200 0.250 0.350 RG
+1.00 w
+40.00 385.00 515.28 138.00 re s
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 509.00 Td (# 1. Clone the project \(if setting up fresh\)) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 499.50 Td (git clone https://github.com/BohaniLucas/AssetBridge.git) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 490.00 Td (cd AssetBridge) Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 471.00 Td (# 2. Fetch all branches created by team members on GitHub) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 461.50 Td (git fetch origin) Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 442.50 Td (# 3. Switch to YOUR designated branch \(choose your name\):) Tj ET
+0.980 0.800 0.080 rg
+BT /F3 8.50 Tf 52.00 433.00 Td (git checkout fullstack/Rory       # If you are Rory) Tj ET
+0.980 0.800 0.080 rg
+BT /F3 8.50 Tf 52.00 423.50 Td (git checkout fullstack/Dokotela   # If you are Dokotela) Tj ET
+0.980 0.800 0.080 rg
+BT /F3 8.50 Tf 52.00 414.00 Td (git checkout fullstack/Lucas      # If you are Lucas) Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 395.00 Td (# 4. Confirm you are on your branch \(asterisk * marks active branch\)) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 385.50 Td (git branch) Tj ET
+0.940 0.970 1.000 rg
+40.00 296.00 515.28 56.00 re f
+0.200 0.500 0.900 RG
+1.00 w
+40.00 296.00 515.28 56.00 re s
+0.140 0.400 0.900 rg
+40.00 296.00 4.00 56.00 re f
+0.100 0.300 0.750 rg
+BT /F2 9.50 Tf 54.00 336.00 Td (KEY COLLABORATION PRINCIPLE: ALWAYS PULL BEFORE YOU WRITE) Tj ET
+0.200 0.250 0.350 rg
+BT /F1 8.50 Tf 54.00 323.00 Td (To prevent merge conflicts, make it an absolute habit to sync dev into your branch each morning.) Tj ET
+0.200 0.250 0.350 rg
+BT /F1 8.50 Tf 54.00 310.00 Td (When your feature is complete and tested, merge your branch into dev so your teammates get it.) Tj ET
+0.850 0.880 0.920 RG
+0.75 w
+40.00 32.00 m 555.28 32.00 l s
+0.450 0.520 0.620 rg
+BT /F1 8.00 Tf 40.00 20.00 Td (AssetBridge Engineering Guide ‚Ä¢ Confidential & Internal Team Use) Tj ET
+0.250 0.350 0.500 rg
+BT /F2 8.00 Tf 500.28 20.00 Td (Page 1 of 3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 5020 >>
+stream
+0.060 0.090 0.160 rg
+40.00 770.00 515.28 42.00 re f
+0.000 0.760 1.000 rg
+40.00 810.00 515.28 2.00 re f
+1.000 1.000 1.000 rg
+BT /F2 11.50 Tf 54.00 788.00 Td (DAILY WORKFLOW ‚Ä¢ SYNCING, COMMITTING & MERGING TO DEV) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.00 Tf 40.00 746.00 Td (3. Morning Routine: Syncing with dev \(dev -> your branch\)) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 742.00 m 555.28 742.00 l s
+0.300 0.350 0.450 rg
+BT /F1 9.00 Tf 40.00 730.00 Td (Before writing any new code, pull teammate updates from dev into your branch:) Tj ET
+0.070 0.100 0.170 rg
+40.00 636.00 515.28 86.00 re f
+0.200 0.250 0.350 RG
+1.00 w
+40.00 636.00 515.28 86.00 re s
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 708.00 Td (# Step 1: Switch to dev and fetch newest commits from teammates) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 698.00 Td (git checkout dev) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 688.00 Td (git pull origin dev) Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 678.00 Td (# Step 2: Switch back to your personal branch) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 668.00 Td (git checkout fullstack/<your-name>) Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 658.00 Td (# Step 3: Merge dev changes into your working branch) Tj ET
+0.980 0.800 0.080 rg
+BT /F3 8.50 Tf 52.00 648.00 Td (git merge dev) Tj ET
+0.160 0.780 0.450 rg
+BT /F4 8.50 Tf 52.00 638.00 Td (# Result: Your branch now has all teammate updates!) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.00 Tf 40.00 608.00 Td (4. Writing Code & Committing in Your Branch) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 604.00 m 555.28 604.00 l s
+0.300 0.350 0.450 rg
+BT /F1 9.00 Tf 40.00 592.00 Td (Work exclusively on your designated branch. Commit small, logical changes frequently:) Tj ET
+0.070 0.100 0.170 rg
+40.00 508.00 515.28 76.00 re f
+0.200 0.250 0.350 RG
+1.00 w
+40.00 508.00 515.28 76.00 re s
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 570.00 Td (# 1. Check modified files) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 561.00 Td (git status) Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 552.00 Td (# 2. Stage your changes) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 543.00 Td (git add .) Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 534.00 Td (# 3. Commit with an explanatory message) Tj ET
+0.980 0.800 0.080 rg
+BT /F3 8.50 Tf 52.00 525.00 Td (git commit -m "feat\(tokens\): integrated P2P token transfer modal") Tj ET
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 516.00 Td (# 4. Push your branch to GitHub backup) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 507.00 Td (git push origin fullstack/<your-name>) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.00 Tf 40.00 478.00 Td (5. Pushing Finished Work to dev \(your branch -> dev\)) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 474.00 m 555.28 474.00 l s
+0.300 0.350 0.450 rg
+BT /F1 9.00 Tf 40.00 462.00 Td (When your feature is complete and verified, push it into dev using either method:) Tj ET
+0.960 0.980 1.000 rg
+40.00 376.00 515.28 76.00 re f
+0.700 0.820 0.980 RG
+0.75 w
+40.00 376.00 515.28 76.00 re s
+0.140 0.400 0.900 rg
+40.00 376.00 4.00 76.00 re f
+0.100 0.300 0.750 rg
+BT /F2 9.00 Tf 52.00 438.00 Td (METHOD A: GITHUB PULL REQUEST \(RECOMMENDED & SAFEST\)) Tj ET
+0.200 0.250 0.350 rg
+BT /F1 8.50 Tf 52.00 424.00 Td (1. Push your branch: git push origin fullstack/<your-name>) Tj ET
+0.200 0.250 0.350 rg
+BT /F1 8.50 Tf 52.00 411.00 Td (2. Go to https://github.com/BohaniLucas/AssetBridge -> Click 'Compare & pull request') Tj ET
+0.850 0.250 0.100 rg
+BT /F2 8.50 Tf 52.00 398.00 Td (3. Target base branch must be 'dev' \(NOT main!\). Compare branch: 'fullstack/<name>') Tj ET
+0.100 0.550 0.250 rg
+BT /F1 8.50 Tf 52.00 385.00 Td (4. Click 'Create pull request' -> Click 'Merge pull request'. Dev is now updated!) Tj ET
+0.070 0.100 0.170 rg
+40.00 276.00 515.28 86.00 re f
+0.200 0.250 0.350 RG
+1.00 w
+40.00 276.00 515.28 86.00 re s
+0.580 0.640 0.720 rg
+BT /F4 8.50 Tf 52.00 348.00 Td (# METHOD B: DIRECT TERMINAL MERGE \(Fast command line workflow\)) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 338.00 Td (git push origin fullstack/<your-name>   # Ensure personal branch is pushed) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 328.00 Td (git checkout dev                       # Switch to dev branch) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 318.00 Td (git pull origin dev                    # Get latest changes from others) Tj ET
+0.980 0.800 0.080 rg
+BT /F3 8.50 Tf 52.00 308.00 Td (git merge fullstack/<your-name>        # Merge your finished work into dev) Tj ET
+0.160 0.780 0.450 rg
+BT /F3 8.50 Tf 52.00 298.00 Td (git push origin dev                    # Push updated dev to GitHub) Tj ET
+0.220 0.740 0.970 rg
+BT /F3 8.50 Tf 52.00 288.00 Td (git checkout fullstack/<your-name>     # Return to your branch for next task) Tj ET
+0.850 0.880 0.920 RG
+0.75 w
+40.00 32.00 m 555.28 32.00 l s
+0.450 0.520 0.620 rg
+BT /F1 8.00 Tf 40.00 20.00 Td (AssetBridge Engineering Guide ‚Ä¢ Confidential & Internal Team Use) Tj ET
+0.250 0.350 0.500 rg
+BT /F2 8.00 Tf 500.28 20.00 Td (Page 2 of 3) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 6592 >>
+stream
+0.060 0.090 0.160 rg
+40.00 770.00 515.28 42.00 re f
+0.000 0.760 1.000 rg
+40.00 810.00 515.28 2.00 re f
+1.000 1.000 1.000 rg
+BT /F2 11.50 Tf 54.00 788.00 Td (CONFLICT RESOLUTION, GOLDEN RULES & QUICK CHEAT SHEET) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.00 Tf 40.00 746.00 Td (6. How to Resolve Merge Conflicts \(No-Panic Guide\)) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 742.00 m 555.28 742.00 l s
+0.300 0.350 0.450 rg
+BT /F1 8.50 Tf 40.00 732.00 Td (A conflict only happens when you and a teammate edited the exact same line in the same file.) Tj ET
+0.300 0.350 0.450 rg
+BT /F1 8.50 Tf 40.00 720.00 Td (Git pauses and asks you which version to keep. Here is how to resolve it cleanly in VS Code:) Tj ET
+0.990 0.950 0.950 rg
+40.00 607.00 515.28 105.00 re f
+0.950 0.700 0.700 RG
+0.75 w
+40.00 607.00 515.28 105.00 re s
+0.850 0.200 0.200 rg
+40.00 607.00 4.00 105.00 re f
+0.750 0.150 0.150 rg
+BT /F2 9.00 Tf 52.00 698.00 Td (STEP-BY-STEP CONFLICT RESOLUTION WORKFLOW) Tj ET
+0.200 0.250 0.350 rg
+BT /F1 8.50 Tf 52.00 684.00 Td (1. Open VS Code: Conflicting files are highlighted in purple with an exclamation mark \(!\).) Tj ET
+0.200 0.250 0.350 rg
+BT /F1 8.50 Tf 52.00 671.00 Td (2. Click on the file: Above the highlighted code, VS Code displays 3 clickable helper buttons:) Tj ET
+0.150 0.450 0.200 rg
+BT /F2 8.00 Tf 60.00 658.00 Td (   ‚Ä¢ Accept Current Change: Keeps your version of the code.) Tj ET
+0.200 0.350 0.700 rg
+BT /F2 8.00 Tf 60.00 646.00 Td (   ‚Ä¢ Accept Incoming Change: Keeps your teammate's version from dev.) Tj ET
+0.650 0.450 0.050 rg
+BT /F2 8.00 Tf 60.00 634.00 Td (   ‚Ä¢ Accept Both Changes: Keeps both blocks if both are needed.) Tj ET
+0.100 0.150 0.250 rg
+BT /F4 8.00 Tf 52.00 618.00 Td (3. Save file -> git add . -> git commit -m "fix: resolved merge conflict with dev" -> Push!) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.00 Tf 40.00 589.00 Td (7. AssetBridge Team Golden Rules) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 585.00 m 555.28 585.00 l s
+0.970 0.980 0.990 rg
+40.00 555.00 515.28 24.00 re f
+0.850 0.880 0.920 RG
+0.50 w
+40.00 555.00 515.28 24.00 re s
+0.850 0.200 0.200 rg
+40.00 555.00 3.00 24.00 re f
+0.850 0.200 0.200 rg
+BT /F2 8.00 Tf 50.00 568.00 Td (RULE 1: NEVER PUSH DIRECTLY TO 'main') Tj ET
+0.300 0.350 0.420 rg
+BT /F1 7.80 Tf 255.00 568.00 Td (Only the team lead merges 'dev' into 'main' after end-to-end verification.) Tj ET
+0.970 0.980 0.990 rg
+40.00 527.00 515.28 24.00 re f
+0.850 0.880 0.920 RG
+0.50 w
+40.00 527.00 515.28 24.00 re s
+0.800 0.450 0.050 rg
+40.00 527.00 3.00 24.00 re f
+0.800 0.450 0.050 rg
+BT /F2 8.00 Tf 50.00 540.00 Td (RULE 2: NEVER COMMIT SECRETS OR '.env' FILES) Tj ET
+0.300 0.350 0.420 rg
+BT /F1 7.80 Tf 255.00 540.00 Td (All API keys and secrets stay in local .env \(strictly git-ignored\).) Tj ET
+0.970 0.980 0.990 rg
+40.00 499.00 515.28 24.00 re f
+0.850 0.880 0.920 RG
+0.50 w
+40.00 499.00 515.28 24.00 re s
+0.100 0.450 0.750 rg
+40.00 499.00 3.00 24.00 re f
+0.100 0.450 0.750 rg
+BT /F2 8.00 Tf 50.00 512.00 Td (RULE 3: SYNC WITH 'dev' DAILY) Tj ET
+0.300 0.350 0.420 rg
+BT /F1 7.80 Tf 255.00 512.00 Td (Frequent small merges prevent large merge headaches. Sync morning & evening.) Tj ET
+0.970 0.980 0.990 rg
+40.00 471.00 515.28 24.00 re f
+0.850 0.880 0.920 RG
+0.50 w
+40.00 471.00 515.28 24.00 re s
+0.150 0.550 0.250 rg
+40.00 471.00 3.00 24.00 re f
+0.150 0.550 0.250 rg
+BT /F2 8.00 Tf 50.00 484.00 Td (RULE 4: TEST BEFORE PUSHING TO 'dev') Tj ET
+0.300 0.350 0.420 rg
+BT /F1 7.80 Tf 255.00 484.00 Td (Run npm test in Public/App and Backend before merging into dev.) Tj ET
+0.060 0.090 0.160 rg
+BT /F2 12.00 Tf 40.00 463.00 Td (8. One-Page Quick Command Cheat Sheet) Tj ET
+0.000 0.760 1.000 RG
+1.50 w
+40.00 459.00 m 555.28 459.00 l s
+0.120 0.160 0.230 rg
+40.00 445.00 515.28 16.00 re f
+1.000 1.000 1.000 rg
+BT /F2 8.00 Tf 48.00 449.00 Td (GOAL) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.00 Tf 220.00 449.00 Td (COMMAND SEQUENCE) Tj ET
+0.980 0.990 1.000 rg
+40.00 431.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 431.00 m 555.28 431.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 435.00 Td (See branch & pending files) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 435.00 Td (git status) Tj ET
+0.980 0.990 1.000 rg
+40.00 416.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 416.00 m 555.28 416.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 420.00 Td (Download new branches from GitHub) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 420.00 Td (git fetch origin) Tj ET
+0.980 0.990 1.000 rg
+40.00 401.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 401.00 m 555.28 401.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 405.00 Td (Switch to your personal branch) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 405.00 Td (git checkout fullstack/<your-name>) Tj ET
+0.980 0.990 1.000 rg
+40.00 386.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 386.00 m 555.28 386.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 390.00 Td (Update your branch with team changes) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 390.00 Td (git checkout dev && git pull && git checkout fullstack/<name> && git merge dev) Tj ET
+0.980 0.990 1.000 rg
+40.00 371.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 371.00 m 555.28 371.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 375.00 Td (Save & commit your work) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 375.00 Td (git add . && git commit -m "description of change") Tj ET
+0.980 0.990 1.000 rg
+40.00 356.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 356.00 m 555.28 356.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 360.00 Td (Backup your work to GitHub) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 360.00 Td (git push origin fullstack/<your-name>) Tj ET
+0.980 0.990 1.000 rg
+40.00 341.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 341.00 m 555.28 341.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 345.00 Td (Merge your work to dev \(Terminal\)) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 345.00 Td (git checkout dev && git pull && git merge fullstack/<name> && git push origin dev) Tj ET
+0.980 0.990 1.000 rg
+40.00 326.00 515.28 15.00 re f
+0.880 0.900 0.940 RG
+0.50 w
+40.00 326.00 m 555.28 326.00 l s
+0.150 0.200 0.280 rg
+BT /F2 7.80 Tf 48.00 330.00 Td (Discard local mistakes on a file) Tj ET
+0.080 0.380 0.680 rg
+BT /F4 7.50 Tf 220.00 330.00 Td (git restore <file-name>) Tj ET
+0.850 0.880 0.920 RG
+0.75 w
+40.00 32.00 m 555.28 32.00 l s
+0.450 0.520 0.620 rg
+BT /F1 8.00 Tf 40.00 20.00 Td (AssetBridge Engineering Guide ‚Ä¢ Confidential & Internal Team Use) Tj ET
+0.250 0.350 0.500 rg
+BT /F2 8.00 Tf 500.28 20.00 Td (Page 3 of 3) Tj ET
+endstream
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000000279 00000 n 
+0000000347 00000 n 
+0000000420 00000 n 
+0000000582 00000 n 
+0000006798 00000 n 
+0000006961 00000 n 
+0000012034 00000 n 
+0000012198 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+18843
+%%EOF

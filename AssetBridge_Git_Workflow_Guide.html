@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AssetBridge — Team Git Workflow & Collaboration Guide</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 14mm 16mm 14mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+      background-color: #ffffff;
+      line-height: 1.5;
+      font-size: 11pt;
+    }
+    .cover-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #2563eb 100%);
+      color: #ffffff;
+      padding: 24px 28px;
+      border-radius: 12px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+    }
+    .badge-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .badge-primary {
+      background: #00c2ff;
+      color: #0b1120;
+      border-color: #00c2ff;
+    }
+    h1 {
+      font-size: 22pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+    .tagline {
+      font-size: 11pt;
+      color: #93c5fd;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .repo-box {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 9.5pt;
+      color: #38bdf8;
+    }
+    h2 {
+      font-size: 13pt;
+      font-weight: 800;
+      color: #1e293b;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #334155;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    p {
+      margin-bottom: 8px;
+      color: #334155;
+      font-size: 10pt;
+    }
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    .highlight-card {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #2563eb;
+    }
+    .alert-card {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-left: 4px solid #ef4444;
+    }
+    .success-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 4px solid #10b981;
+    }
+    code {
+      font-family: "Consolas", "Courier New", monospace;
+      background: #e2e8f0;
+      color: #0f172a;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+    pre {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-family: "Consolas", "Courier New", monospace;
+      font-size: 9pt;
+      line-height: 1.45;
+      margin: 8px 0;
+      overflow-x: auto;
+    }
+    pre .comment {
+      color: #94a3b8;
+      font-style: italic;
+    }
+    pre .cmd {
+      color: #38bdf8;
+      font-weight: 700;
+    }
+    pre .param {
+      color: #facc15;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 9.5pt;
+    }
+    th {
+      background: #1e293b;
+      color: #ffffff;
+      text-align: left;
+      padding: 7px 10px;
+      font-weight: 700;
+      font-size: 9pt;
+    }
+    td {
+      padding: 6px 10px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+    }
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    ol, ul {
+      margin-left: 20px;
+      margin-bottom: 8px;
+      color: #334155;
+      font-size: 10pt;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .rule-title {
+      font-weight: 700;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── COVER HEADER ──────────────────────────────────────────────────────── -->
+  <div class="cover-banner">
+    <div class="badge-row">
+      <span class="badge badge-primary">AssetBridge</span>
+      <span class="badge">Team Engineering Guide</span>
+      <span class="badge">Git & GitHub</span>
+    </div>
+    <h1>Team Git Collaboration & Workflow Guide</h1>
+    <div class="tagline">How to Work in Your Branch, Push to Dev, and Sync Safely</div>
+    <div class="repo-box">
+      https://github.com/BohaniLucas/AssetBridge.git
+    </div>
+  </div>
+
+  <!-- ── 1. BRANCH ARCHITECTURE ────────────────────────────────────────────── -->
+  <h2>1. Branch Structure & Roles</h2>
+  <p>Our repository uses a 3-tier structure to protect production and prevent code conflicts:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Branch</th>
+        <th>Purpose</th>
+        <th>Who Works Here?</th>
+        <th>Direct Push?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>main</code></td>
+        <td>Production release & Hackathon final demo.</td>
+        <td>Team Lead Only</td>
+        <td><strong style="color: #ef4444;">NEVER</strong></td>
+      </tr>
+      <tr>
+        <td><code>dev</code></td>
+        <td>Integration & Staging branch. All finished work merges here first.</td>
+        <td>Entire Team</td>
+        <td>Merge / PR only</td>
+      </tr>
+      <tr>
+        <td><code>fullstack/Lucas</code></td>
+        <td>Lucas's dedicated feature & development branch.</td>
+        <td>Lucas</td>
+        <td><span style="color: #10b981;">YES (Your branch)</span></td>
+      </tr>
+      <tr>
+        <td><code>fullstack/Rory</code></td>
+        <td>Rory's dedicated feature & development branch.</td>
+        <td>Rory</td>
+        <td><span style="color: #10b981;">YES (Your branch)</span></td>
+      </tr>
+      <tr>
+        <td><code>fullstack/Dokotela</code></td>
+        <td>Dokotela's dedicated feature & development branch.</td>
+        <td>Dokotela</td>
+        <td><span style="color: #10b981;">YES (Your branch)</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ── 2. FIRST-TIME SETUP ───────────────────────────────────────────────── -->
+  <h2>2. First-Time Setup (Onboarding)</h2>
+  <div class="card highlight-card">
+    <p>Run these commands once when you first set up the project on your laptop:</p>
+  </div>
+
+  <pre><span class="comment"># 1. Clone the repository</span>
+<span class="cmd">git clone</span> https://github.com/BohaniLucas/AssetBridge.git
+<span class="cmd">cd</span> AssetBridge
+
+<span class="comment"># 2. Fetch all branches created on GitHub</span>
+<span class="cmd">git fetch origin</span>
+
+<span class="comment"># 3. Switch to your personal branch (choose your name):</span>
+<span class="comment"># For Rory:</span>
+<span class="cmd">git checkout</span> <span class="param">fullstack/Rory</span>
+
+<span class="comment"># For Dokotela:</span>
+<span class="cmd">git checkout</span> <span class="param">fullstack/Dokotela</span>
+
+<span class="comment"># For Lucas:</span>
+<span class="cmd">git checkout</span> <span class="param">fullstack/Lucas</span>
+
+<span class="comment"># 4. Confirm you are on your branch (look for the asterisk *)</span>
+<span class="cmd">git branch</span></pre>
+
+  <!-- ── 3. DAILY ROUTINE ──────────────────────────────────────────────────── -->
+  <h2>3. Daily Morning Routine: Syncing with <code>dev</code> (dev &rarr; your branch)</h2>
+  <div class="card success-card">
+    <p><strong>Crucial Habit:</strong> Before you write any new code each morning, always pull the newest updates that teammates merged into <code>dev</code> so your branch never falls behind!</p>
+  </div>
+
+  <pre><span class="comment"># Step 1: Switch to dev and get the latest changes from teammates</span>
+<span class="cmd">git checkout</span> <span class="param">dev</span>
+<span class="cmd">git pull origin</span> <span class="param">dev</span>
+
+<span class="comment"># Step 2: Switch back to your own branch</span>
+<span class="cmd">git checkout</span> <span class="param">fullstack/&lt;your-name&gt;</span>
+
+<span class="comment"># Step 3: Merge the new dev updates into your branch</span>
+<span class="cmd">git merge</span> <span class="param">dev</span>
+
+<span class="comment"># Now you are 100% up-to-date and ready to code!</span></pre>
+
+  <div class="page-break"></div>
+
+  <!-- ── 4. WORKING & COMMITTING ───────────────────────────────────────────── -->
+  <h2>4. Writing Code & Committing Cleanly</h2>
+  <p>Work exclusively in your personal branch (<code>fullstack/&lt;your-name&gt;</code>):</p>
+
+  <pre><span class="comment"># 1. Check what files you have modified</span>
+<span class="cmd">git status</span>
+
+<span class="comment"># 2. Stage your modified files</span>
+<span class="cmd">git add .</span>
+
+<span class="comment"># 3. Commit with a meaningful message explaining what you built</span>
+<span class="cmd">git commit -m</span> <span class="param">"feat(invest): added USDT token offering unit pricing"</span>
+
+<span class="comment"># 4. Push your work to your personal branch on GitHub</span>
+<span class="cmd">git push origin</span> <span class="param">fullstack/&lt;your-name&gt;</span></pre>
+
+  <!-- ── 5. PUSHING TO DEV ─────────────────────────────────────────────────── -->
+  <h2>5. Pushing Your Finished Work to <code>dev</code> (your branch &rarr; dev)</h2>
+  <p>When you finish a feature, test it locally first. Then merge it into <code>dev</code> using either method:</p>
+
+  <h3>Method A: GitHub Pull Request (Recommended & Safest)</h3>
+  <ol>
+    <li>Push your branch: <code>git push origin fullstack/&lt;your-name&gt;</code></li>
+    <li>Go to GitHub: <code>https://github.com/BohaniLucas/AssetBridge</code></li>
+    <li>You will see a yellow banner: <strong>"fullstack/&lt;name&gt; had recent pushes. Compare &amp; pull request"</strong>.</li>
+    <li>Click <strong>Compare &amp; pull request</strong>.</li>
+    <li><strong>CRITICAL:</strong> Ensure <code>base: dev</code> &larr; <code>compare: fullstack/&lt;your-name&gt;</code>. (Do NOT merge into <code>main</code>!).</li>
+    <li>Click <strong>Create pull request</strong> &rarr; then click <strong>Merge pull request</strong> &rarr; <strong>Confirm merge</strong>.</li>
+  </ol>
+
+  <h3>Method B: Direct Terminal Merge (Fast)</h3>
+  <pre><span class="comment"># 1. Make sure your own branch is committed and pushed</span>
+<span class="cmd">git push origin</span> <span class="param">fullstack/&lt;your-name&gt;</span>
+
+<span class="comment"># 2. Switch to dev and make sure dev is up to date</span>
+<span class="cmd">git checkout</span> <span class="param">dev</span>
+<span class="cmd">git pull origin</span> <span class="param">dev</span>
+
+<span class="comment"># 3. Merge your branch into dev</span>
+<span class="cmd">git merge</span> <span class="param">fullstack/&lt;your-name&gt;</span>
+
+<span class="comment"># 4. Push updated dev to GitHub</span>
+<span class="cmd">git push origin</span> <span class="param">dev</span>
+
+<span class="comment"># 5. Switch back to your own branch for your next task</span>
+<span class="cmd">git checkout</span> <span class="param">fullstack/&lt;your-name&gt;</span></pre>
+
+  <!-- ── 6. MERGE CONFLICTS ────────────────────────────────────────────────── -->
+  <h2>6. How to Resolve Merge Conflicts (No-Panic Guide)</h2>
+  <div class="card alert-card">
+    <p>A merge conflict happens when you and a teammate edited the exact same line in the same file. Git pauses and asks you which version to keep.</p>
+  </div>
+
+  <ol>
+    <li>Open the project in <strong>VS Code</strong>. Conflicting files will appear in <strong>purple with an exclamation mark</strong>.</li>
+    <li>Click on the file. Above the conflicting section, VS Code gives you 3 clickable buttons:
+      <ul>
+        <li><strong>Accept Current Change</strong>: Keeps your code.</li>
+        <li><strong>Accept Incoming Change</strong>: Keeps your teammate's code.</li>
+        <li><strong>Accept Both Changes</strong>: Keeps both.</li>
+      </ul>
+    </li>
+    <li>Choose the right button (or manually edit the code to combine both).</li>
+    <li>Save the file.</li>
+    <li>In terminal, finalize the merge:
+      <pre><span class="cmd">git add .</span>
+<span class="cmd">git commit -m</span> <span class="param">"fix: resolved merge conflict with dev"</span>
+<span class="cmd">git push origin</span> <span class="param">fullstack/&lt;your-name&gt;</span></pre>
+    </li>
+  </ol>
+
+  <!-- ── 7. GOLDEN RULES ───────────────────────────────────────────────────── -->
+  <h2>7. Team Golden Rules</h2>
+  <ul>
+    <li><span class="rule-title">Rule 1: NEVER push directly to <code>main</code>.</span> All code must go through <code>dev</code> first.</li>
+    <li><span class="rule-title">Rule 2: NEVER commit <code>.env</code> or private keys.</span> They are git-ignored.</li>
+    <li><span class="rule-title">Rule 3: Sync with <code>dev</code> daily.</span> The more frequently you pull from <code>dev</code>, the less likely you will ever encounter conflicts.</li>
+    <li><span class="rule-title">Rule 4: Test before pushing to <code>dev</code>.</span> Run <code>npm test</code> to verify tests pass.</li>
+  </ul>
+
+  <!-- ── 8. CHEAT SHEET ────────────────────────────────────────────────────── -->
+  <h2>8. Quick Command Cheat Sheet</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Command</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Check current branch &amp; status</td>
+        <td><code>git status</code></td>
+      </tr>
+      <tr>
+        <td>Fetch all new branches from GitHub</td>
+        <td><code>git fetch origin</code></td>
+      </tr>
+      <tr>
+        <td>Switch to your branch</td>
+        <td><code>git checkout fullstack/&lt;name&gt;</code></td>
+      </tr>
+      <tr>
+        <td>Pull latest dev into your branch</td>
+        <td><code>git checkout dev && git pull && git checkout fullstack/&lt;name&gt; && git merge dev</code></td>
+      </tr>
+      <tr>
+        <td>Save your changes</td>
+        <td><code>git add . && git commit -m "your description"</code></td>
+      </tr>
+      <tr>
+        <td>Push your branch to GitHub</td>
+        <td><code>git push origin fullstack/&lt;name&gt;</code></td>
+      </tr>
+      <tr>
+        <td>Merge your branch to dev</td>
+        <td><code>git checkout dev && git pull && git merge fullstack/&lt;name&gt; && git push origin dev</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
