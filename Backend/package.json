@@ -1,0 +1,37 @@
+{
+  "name": "assetbridge-backend",
+  "version": "1.0.0",
+  "description": "AssetBridge Backend API — Express + Supabase / Web3 RWA & Stablecoin Settlement",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node --watch src/main.js",
+    "test": "node test/notificationService.test.js && node test/renderDeploymentReadiness.test.js && node test/adminSessionAndEndpointHardening.test.js && node test/adminAuthHardening.test.js && node test/cryptographicCertificateAndVerification.test.js && node test/productIdentityAndRegistration.test.js && node test/escrowComprehensive.test.js && node test/escrowIntegration.test.js && node test/avatarIntegration.test.js && node test/profileIntegration.test.js && node test/vaultIntegration.test.js && node test/adminAndImageIntegration.test.js && node test/security.test.js && node test/walletAuth.test.js && node test/transactionEligibilityAndPhantomBalance.test.js && node test/buyoutAllocationAndInvestmentRules.test.js && node test/escrowBuyingAndSellingFlow.test.js && node test/portfolioSummaryAndSnapshots.test.js && node test/analyticsAudit.test.js && node test/sellerDelistAndRedemption.test.js && node test/emailVerificationAndPasswordRecovery.test.js"
+  },
+  "keywords": [
+    "assetbridge",
+    "rwa",
+    "tokenization",
+    "stablecoin",
+    "usdt",
+    "p2p"
+  ],
+  "author": "AssetBridge Team",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "axios": "^1.20.0",
+    "cloudinary": "^2.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.17.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "form-data": "^4.0.6",
+    "helmet": "^8.2.0",
+    "nodemon": "^3.1.14",
+    "stripe": "^22.6.2",
+    "ws": "^8.21.3"
+  }
+}

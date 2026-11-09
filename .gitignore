@@ -1,0 +1,61 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment files & secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Server-side keys & credentials
+Backend/src/config/keys/
+*.keystore.json
+
+# Expo & Mobile builds
+.expo/
+**/.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+
+# Native certificates & generated folders
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+/ios
+/android
+.kotlin/
+
+# Hardhat & Blockchain artifacts
+Blockchain/artifacts/
+Blockchain/cache/
+Blockchain/typechain-types/
+
+# Uploads, temporary data & logs
+uploads/
+**/uploads/assets/*
+!**/uploads/assets/.gitkeep
+**/uploads/kyc/*
+!**/uploads/kyc/.gitkeep
+**/uploads/avatars/*
+!**/uploads/avatars/.gitkeep
+Backend/src/data/*.json
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS files & cache
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
